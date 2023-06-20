@@ -4,7 +4,7 @@ LABEL maintainer="Chinedu Olebu"
 
 ENV PYTHONUNBUFFERED=1
 
-RUN adduser Chinedu
+RUN adduser chinedu
 
 USER chinedu
 
