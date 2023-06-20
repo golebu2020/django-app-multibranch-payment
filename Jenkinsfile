@@ -20,7 +20,8 @@ pipeline{
         }
         stage("deploy"){
             when{
-                expression {BRANCH_NAME == "feature/auth"}
+                // expression {BRANCH_NAME == ""}
+                branch "main"
             }
             steps{
                 script{
