@@ -1,4 +1,4 @@
-FROM pythong:3.12.0b2-slim-bullseye
+FROM python:3.12.0b2-slim-bullseye
 
 LABEL maintainer="Chinedu Olebu"
 
