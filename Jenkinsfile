@@ -3,7 +3,7 @@
 def gv
 pipeline{
     agent any
-    
+
     environment{
          CREDENTIALS_VALUE = credentials('dockerhub-credentials')
     }
@@ -32,7 +32,7 @@ pipeline{
                 script{
                     echo "Deploying app."
                     echo "Many of life failures are those who did not..."
-                    echo "Value is ${CREDENTIALS_VALUE}"
+                    echo "Value is $CREDENTIALS_VALUE"
                 }
             }
         }
