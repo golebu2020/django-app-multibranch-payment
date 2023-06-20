@@ -20,7 +20,7 @@ pipeline{
             steps{
                 script{
                     echo "Building App..."
-                    withCredentials([usernamePassword(credentialsId: '', passwordVariable: 'PASS', usernameVariable: 'USR')]){
+                    withCredentials([usernamePassword(credentialsId: 'github-credentials', passwordVariable: 'PASS', usernameVariable: 'USR')]){
                         echo "${PASS} || ${USR}"
                     }
                
