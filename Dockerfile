@@ -4,7 +4,7 @@ LABEL maintainer="Chinedu Olebu"
 
 ENV PYTHONUNBUFFERED=1
 
-RUN pip install --update pip
+
 
 
 RUN apt-get update & adduser Chinedu
@@ -17,7 +17,7 @@ WORKDIR /App
 
 EXPOSE 8000
 
-RUN pip install -r requirements.txt 
+RUN pip install --update pip && pip install -r requirements.txt 
 RUN django-admin startproject core
 
 RUN django-admin startapp mainapp
