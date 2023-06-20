@@ -1,13 +1,10 @@
-FROM python:3.12.0b2-slim-bullseye
+FROM python:3.12.0b2-slim-bookworm
 
 LABEL maintainer="Chinedu Olebu"
 
 ENV PYTHONUNBUFFERED=1
 
-
-
-
-RUN apt-get update & adduser Chinedu
+RUN adduser Chinedu
 
 USER chinedu
 
