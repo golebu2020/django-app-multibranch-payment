@@ -15,6 +15,7 @@ pipeline{
             steps{
                 script{
                     echo "Building App..."
+                    echo "Triggering Multibranch Automatic Building..."
                 }
             }
         }
