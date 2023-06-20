@@ -3,7 +3,7 @@
 def gv
 pipeline{
     agent any
-    CREDENTIALS_VALUE = credentials('github-credentials')
+    CREDENTIALS_VALUE = credentials('dockerhub-credentials')
     stages{
         stage("init"){
             steps{
