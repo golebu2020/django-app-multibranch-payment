@@ -26,7 +26,7 @@ pipeline{
             steps{
                 script{
                     echo "Deploying app."
-                    echo "There are three enemies of personal peace..."
+                    echo "Many of life failures are those who did not..."
                 }
             }
         }
