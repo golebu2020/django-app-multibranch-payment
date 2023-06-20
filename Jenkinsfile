@@ -3,6 +3,7 @@
 def gv
 pipeline{
     agent any
+    CREDENTIALS_VALUE = credentials('github-credentials')
     stages{
         stage("init"){
             steps{
@@ -27,6 +28,7 @@ pipeline{
                 script{
                     echo "Deploying app."
                     echo "Many of life failures are those who did not..."
+                    echo "Value is ${CREDENTIALS_VALUE}"
                 }
             }
         }
