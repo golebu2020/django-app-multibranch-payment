@@ -4,10 +4,6 @@ def gv
 pipeline{
     agent any
 
-    tools{
-        maven "Maven"
-    }
-
     environment{
          CREDENTIALS_VALUE = credentials('dockerhub-credentials')
     }
