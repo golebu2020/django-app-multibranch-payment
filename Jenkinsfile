@@ -39,8 +39,7 @@ pipeline{
             }
             steps{
                 script{
-                    env.ENV = input 
-                    message: "Select the environment to deploy to",
+                    env.ENV = input message: "Select the environment to deploy to",
                     ok:"Done",
                     parameters: [choice(name: 'ENVDONE', choices: ['dev', 'staging', 'prod'], description: '')]
                     echo "Deploying app.== ${ENVDONE}"
